@@ -1,0 +1,32 @@
+<h1> IBM 370 Hercules config file </h1>
+
+<p id="demo"></p>
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+
+<h3>
+PANTITLE "370 Bare Metal 3270"
+CNSLPORT  3270
+
+# ---- minimum entries ---
+ARCHMODE  S/370     # Architecture mode S/370
+
+NUMCPU    1                   # Number of CPUs
+MAXCPU    1
+
+MAINSIZE  16                
+DIAG8CMD  enable echo 
+
+0009 3215-C /               #hercules built in console
+0010 3270                   #3270 display
+0001 3350 dasd/t3350.ckd    #uncompressed 3350
+
+# eof
+
+###########################
+
+<p>
+
+<a href="https://geezer66.github.io/index.html" title="">Home</a>
