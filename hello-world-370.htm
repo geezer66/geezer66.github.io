@@ -1,0 +1,22 @@
+<h1> IBM 370 / Hercules Hello World to console </h1>
+
+<p id="demo"></p>
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+
+<pre>
+r 0=0008
+r 6=0200
+
+r 200=41200250           # LA 2,250(0)
+r 204=
+
+r 300=09
+</pre>
+
+<a href="https://geezer66.github.io/hercules.cnf" title="">Hercules.cnf</a>
+
+
+<a href="https://geezer66.github.io/index.html" title="">Home</a>
